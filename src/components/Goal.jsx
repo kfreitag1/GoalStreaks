@@ -37,7 +37,7 @@ export default function Goal({ goalData, uid, index, isEditable }) {
         await set(streakRef, isStreakBroken ? 1 : goalData.streak + 1)
     }
 
-    return <li style={{backgroundColor: isComplete ? "green" : "red"}}>
+    return <li style={{backgroundColor: isComplete ? "lightgreen" : "lightgray"}}>
         <div>UID: {uid}</div>
         <div>name: {goalData.name}</div>
         <div>streak: {goalData.streak}</div>

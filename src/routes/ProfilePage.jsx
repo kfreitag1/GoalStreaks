@@ -64,12 +64,12 @@ export default function ProfilePage({ isEditable }) {
                 {userId.charAt(0).toUpperCase() + userId.substring(1)}'s GoalStreak
             </h1>
         </div>
-        <div>userId: {userId}</div>
+        {/*<div>userId: {userId}</div>*/}
 
-        {isEditable ? <p>Editable!</p> : <p>NOT Editable!</p>}
+        {/*{isEditable ? <p>Editable!</p> : <p>NOT Editable!</p>}*/}
         {userData !== null ?
             <>
-                <p>Name: {userData.name}</p>
+                {/*<p>Name: {userData.name}</p>*/}
                 <GoalList goals={userData.goals} uid={userData.uid} isEditable={isEditable}/>
                 <button>Add new goal</button>
             </>
